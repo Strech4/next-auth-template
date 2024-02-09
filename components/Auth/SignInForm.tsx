@@ -17,7 +17,7 @@ export const SignInForm = () => {
             redirect: false,
         });
 
-        if(!signInResult.ok){
+        if(signInResult && !signInResult.ok){
             return toast({
                 title: "Well this did not work",
                 description: "Something went wrong, please try again",
